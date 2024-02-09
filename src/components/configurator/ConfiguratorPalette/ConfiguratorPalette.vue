@@ -18,7 +18,7 @@ import {PropType} from 'vue'
 
 defineProps({
     palette: {
-        type: Object as PropType<configuration.Palette[]>,
+        type: Object as PropType<configuration.Palette>,
         required: true
     },
 })

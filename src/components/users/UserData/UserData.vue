@@ -13,11 +13,12 @@
     </div>
 </template>
 <script setup lang="ts">
+import {PropType} from 'vue';
 import BaseIcon from '@/components/base/BaseIcon/BaseIcon.vue'
 
 defineProps({
     icon: {
-        type: String,
+        type: String as PropType<Icons>,
         required: true
     },
 })
