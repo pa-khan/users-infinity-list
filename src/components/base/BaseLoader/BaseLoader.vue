@@ -5,6 +5,7 @@
         :style="{
             width: `${100}px`
         }"
+        alt="Loader"
     >
 </template>
 <script setup lang="ts">
