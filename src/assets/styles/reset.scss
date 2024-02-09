@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  min-height: 100vh;
+}
+
+body {
+  position: relative;
+  color: var(--color-primary);
+  font-size: var(--size-primary);
+  font-family: var(--font-primary), sans-serif;
+  scroll-behavior: smooth;
+}
+
+input, button {
+  appearance: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  border: none;
+}
+
+img, svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.ConfiguratorSetting {
+  display: flex;
+  gap: 1rem;
+  &__Icon {
+    --width: 2.2rem;
+    width: var(--width);
+    min-width: var(--width);
+    padding: 0.5rem;
+  }
+  &__Wrap {
+    width: 100%;
+  }
+}

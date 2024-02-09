@@ -1,0 +1,39 @@
+.UsersCard {
+  --offset-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__Avatar {
+    --size: 8em;
+    position: relative;
+    width: var(--size);
+    min-width: var(--size);
+    height: var(--size);
+    min-height: var(--size);
+    padding: 0.3rem;
+    border: 1px solid var(--color-3);
+    border-radius: 50%;
+    margin-bottom: calc(var(--offset-bottom) * -1)
+  }
+  &__Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__Data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--color-5);
+    padding: calc(var(--element-padding) + var(--offset-bottom)) var(--element-padding) var(--element-padding);
+    border-radius: var(--element-radius);
+    width: 100%;
+  }
+  &__Name {
+    font-size: 1.4em;
+  }
+}

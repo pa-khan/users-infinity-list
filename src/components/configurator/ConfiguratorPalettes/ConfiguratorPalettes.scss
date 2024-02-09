@@ -1,0 +1,21 @@
+.ConfiguratorPalettes {
+  position: relative;
+  &__Drop {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(calc(var(--offset-top) * -2.2rem));
+  }
+  &:not(.--show) {
+    overflow: hidden;
+    .ConfiguratorPalettes {
+      &__Current {
+        border-radius: 0.2rem;
+      }
+    }
+  }
+  &.--show {
+    z-index: 5;
+  }
+}

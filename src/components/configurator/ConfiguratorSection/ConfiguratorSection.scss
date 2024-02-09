@@ -1,0 +1,32 @@
+.ConfiguratorSection {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 30px;
+  right: 30px;
+  width: 300px;
+  background: #fff;
+  transition: .3s;
+  border: 1px solid #eee;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  gap: 1rem;
+  &__Close {
+    --size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--size);
+    height: var(--size);
+    padding: 5px;
+    transform: translate(-50%, -50%);
+    background: var(--color-2);
+    border-radius: 50%;
+    color: #ffffff;
+  }
+  &:not(.--show) {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

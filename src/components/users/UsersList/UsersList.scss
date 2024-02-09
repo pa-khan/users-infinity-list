@@ -1,0 +1,6 @@
+.UsersList {
+  display: grid;
+  grid-template-columns: repeat(var(--count), minmax(10px, 1fr));
+  gap: var(--gap);
+  padding: var(--padding);
+}
